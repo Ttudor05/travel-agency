@@ -1,0 +1,12 @@
+body {
+ background-color:silver;
+}
+
+$mainBlue: #2f5572;
+
+.large-hero{
+  h2 {
+    coulor: $mainBlue;
+  }
+}
+

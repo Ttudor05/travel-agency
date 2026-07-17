@@ -1,0 +1,26 @@
+@use '../base/variables' as v; // Step up out of 'modules' into 'base'
+@use '../base/mixins';  // Step up out of 'modules' into 'base'
+
+.generic-content-container {
+
+    p {
+      
+
+        line-height: 1.63;
+        margin: .4rem;
+        font-size: .77rem;
+        @include mixins.atSmall{   
+
+           font-size: .80rem;
+        }
+
+    
+
+    }
+
+    p a{
+
+        font-weight: 700;
+    }
+
+}

@@ -1,0 +1,64 @@
+@use '../base/variables' as v; // Step up out of 'modules' into 'base'
+@use '../base/mixins';  // Step up out of 'modules' into 'base'
+
+.headline{
+    
+    font-weight: 300;
+    font-size: 1.75rem;
+    color: v.$mainBlue;
+
+    @include mixins.atSmall {
+         font-size: 2.25rem;
+    }
+    
+    &__centered {
+        text-align: center;
+    }
+
+    &__orange {
+        color: v.$mainOrange;
+    }
+
+    &__small {
+        font-size: 1.2rem;
+        
+        @include mixins.atSmall {
+            font-size: 1.675rem;            
+        }
+    }
+    
+    &__narrow {
+        max-width:500px ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__light {
+        font-weight: 100;
+    }
+
+    &__b-margin-small{
+       
+        margin-bottom:  .5em;
+
+    }
+
+    &__headline__b-margin-smaller {
+
+        margin-bottom: .25em;
+
+    }
+
+    &__no-t-margin{
+       
+        margin-top:0;
+
+    }
+
+    &__b-margin-large {
+       
+       margin-bottom: 1.6em; 
+    }
+
+
+}

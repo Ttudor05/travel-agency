@@ -1,0 +1,25 @@
+@use '../base/variables' as v; // Step up out of 'modules' into 'base'
+@use '../base/mixins';  // Step up out of 'modules' into 'base'
+
+body {
+ font-family: 'Roboto', sans-serif;
+ color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+  font-size: 15px;
+  @include mixins.atMedium {
+   
+    font-size: 19px;
+  }
+
+}
