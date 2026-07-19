@@ -1,9 +1,9 @@
-// base uses 
+/*-- base uses --*/
 @use 'base/global';
 @use 'base/mixins';
 @use 'base/variables';
 
-// modules uses 
+/*-- modules uses --*/
 @use 'modules/generic-content-container';
 @use 'modules/large-hero';
 @use 'modules/btn'; 
@@ -11,9 +11,10 @@
 @use 'modules/page-section';
 @use 'modules/headline';
 @use 'modules/row';
-@use 'modules/section-title';
 @use 'modules/feature-item';
 
-// Classic Imports
+@use 'modules/section-title';
+
+/*-- Classic Imports --*/
 @import 'normalize.css';
 

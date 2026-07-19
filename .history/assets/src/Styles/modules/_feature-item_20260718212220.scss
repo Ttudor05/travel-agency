@@ -1,0 +1,48 @@
+@use '../base/variables' as v; // Step up out of 'modules' into 'base'
+@use '../base/mixins';  // Step up out of 'modules' into 'base'
+
+.feature-item {
+  position: relative;
+  padding-bottom: 2.5rem;
+
+
+ @include mixins.atSmall {
+
+    padding-left: 94px;   
+
+  }
+
+  &__icon {
+   display:block;
+   margin: 0 auto; 
+
+   @include mixins.atSmall {
+
+        position: absolute;
+        left:0;
+    }
+  } 
+  
+  &__title {
+
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: .7em;
+    margin-bottom: .8rem;
+    text-align: center !important;
+  
+
+   @include mixins.atSmall {
+        margin-top: 1em;
+        font-size: 1.875rem;
+        text-align: left;
+    }    
+    
+  }
+
+ 
+
+
+
+
+}
