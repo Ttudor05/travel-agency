@@ -1,0 +1,25 @@
+// modules/_section-title.scss
+@use '../base/variables' as v; // Step up out of 'modules' into 'base'
+@use '../base/mixins';  // Step up out of 'modules' into 'base'
+.section-title{
+
+    font-size: 2.55rem;
+    font-weight: 300;
+    text-align: center;
+
+    &__icon {
+
+            margin-right: .5rem;
+    }
+
+    strong{
+
+        font-weight: 500;
+    }
+
+    @include mixins.atSmall {
+           font-size: 3.75rem;
+    }
+ 
+
+}
