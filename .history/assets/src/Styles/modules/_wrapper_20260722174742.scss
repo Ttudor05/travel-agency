@@ -38,17 +38,4 @@
     
    }
 
- &__no-padding-until-large {
-
-        padding-left: 0;
-        padding-right: 0;
-
-        @include mixins.atLarge {
-                padding-left: 18px;
-                padding-right: 18px;           
-        }
-    
-   }
-
-
 }
