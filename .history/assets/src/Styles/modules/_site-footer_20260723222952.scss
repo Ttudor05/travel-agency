@@ -1,0 +1,19 @@
+@use '../base/variables' as v; // Step up out of 'modules' into 'base'
+@use '../base/mixins';  // Step up out of 'modules' into 'base'
+
+.site-footer{
+
+    background-color: v.$mainBlue;
+    color:#fff;
+    padding: .5rem 0;
+    text-align: center;
+
+   &__text {
+
+        @include mixins.atMedium {
+
+
+        }
+    }
+
+}
