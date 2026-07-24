@@ -1,0 +1,8 @@
+// modules/_testimonials.scss
+@use '../base/variables' as v; // Step up out of 'modules' into 'base'
+@use '../base/mixins';  // Step up out of 'modules' into 'base'
+
+.testimonial {
+    background-color: rgba(255,255,255, .8);
+
+}

@@ -1,0 +1,16 @@
+// modules/_testimonials.scss
+@use '../base/variables' as v; // Step up out of 'modules' into 'base'
+@use '../base/mixins';  // Step up out of 'modules' into 'base'
+
+.testimonial {
+    background-color: rgba(255,255,255, .8);
+    padding: 0 1.8125rem 1px 1.8125rem ;
+    border-radius: 10px;
+
+    &__photo {
+
+        border-radius: 50%;
+
+    }
+
+}

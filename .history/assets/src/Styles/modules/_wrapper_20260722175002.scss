@@ -26,29 +26,6 @@
         }
     }
 
-   &__no-padding-until-medium {
-
-        padding-left: 0;
-        padding-right: 0;
-
-        @include mixins.atMedium {
-                padding-left: 18px;
-                padding-right: 18px;           
-        }
-    
-   }
-
- &__no-padding-until-large {
-
-        padding-left: 0;
-        padding-right: 0;
-
-        @include mixins.atLarge {
-                padding-left: 18px;
-                padding-right: 18px;           
-        }
-    
-   }
-
+   
 
 }

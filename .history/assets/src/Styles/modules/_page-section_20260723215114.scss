@@ -16,7 +16,7 @@
         } 
    }
 
-      &__no-b-padding-until-large {
+      &__no-padding-until-large {
        padding-bottom: 0; 
         @include mixins.atLarge {
             padding:4.5rem 0 ;

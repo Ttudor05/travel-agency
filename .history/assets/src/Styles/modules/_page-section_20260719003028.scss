@@ -1,0 +1,23 @@
+@use '../base/variables' as v; // Step up out of 'modules' into 'base'
+@use '../base/mixins';  // Step up out of 'modules' into 'base'
+
+.page-section {
+
+   padding:1.2rem 0 ;
+
+   @include mixins.atMedium {
+       padding:4.5rem 0 ;
+   } 
+
+    &__blue{
+       background-color: v.$mainBlue; 
+       color:#FFF;
+    }
+
+    &__testimonials {
+
+        background: url('/assets/images/testimonials-bg.jpg') ;
+    }
+
+
+}
