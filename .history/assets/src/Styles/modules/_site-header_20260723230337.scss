@@ -1,0 +1,12 @@
+@use '../base/variables' as v; // Step up out of 'modules' into 'base'
+@use '../base/mixins';  // Step up out of 'modules' into 'base'
+
+
+.site-header {
+
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(v.$mainBlue, .3);
+
+
+}

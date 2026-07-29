@@ -1,0 +1,53 @@
+@use '../base/variables' as v; // Step up out of 'modules' into 'base'
+@use '../base/mixins';  // Step up out of 'modules' into 'base'
+
+
+.site-header {
+    padding: 10px 0;
+    position: absolute;
+    width:100%;
+    z-index: 2;
+    
+    @include mixins.atMedium {
+
+        background-color: rgba(v.$mainBlue, .3);
+
+    }
+
+    &__btn-container {
+
+        float:right;
+
+    }
+
+    &__logo {
+
+      position: absolute;
+      @include mixins.set-theme($bg-color: v.$mainBlue);
+      padding: 25px 36px;
+      top:0;
+      left: 50%;
+      transform: translateX(-50%);
+      @include mixins.atMedium {
+
+        left:auto;
+        transform:translateX(0);
+
+      }
+        
+    }
+
+   
+   &__menu-content {
+
+        display:none;
+        @include mixins.atMedium {
+
+            display: block;
+        }
+
+        
+    }
+
+
+}

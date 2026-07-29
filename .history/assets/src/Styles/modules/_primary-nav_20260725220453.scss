@@ -1,0 +1,67 @@
+@use '../base/variables' as v; // Step up out of 'modules' into 'base'
+@use '../base/mixins';  // Step up out of 'modules' into 'base'
+
+.primary-nav{
+    padding-top: 10px;
+    @include mixins.atMedium {
+      padding-right: 0;
+    }
+    &__pull-right {
+      @include mixins.atMedium{  
+        float: right;
+       } 
+    }
+
+    ul {
+
+        margin: 0;
+        padding: 0;
+        @include mixins.atMedium{  
+         padding-right: 20px;
+       } 
+       
+        @include mixins.clearfix;
+
+    }
+
+    li {
+
+        list-style:none;
+        display: inline-block;
+        padding-right: 7px ;
+        @include mixins.atMedium{ 
+          float: left;
+          display: block;
+          padding-right: 20px ;
+     
+         }   
+
+    }
+
+  li:last-child {
+
+    padding-right: 0;
+    @include mixins.atMedium{ 
+         psdding-right: 20px;
+ 
+      }
+
+    }   
+
+    a {
+
+        @include mixins.set-theme($text-color:#fff, $text-decoration: none, 
+                                  $font-weight: 300, $display: block);
+        padding: 5px 8px;
+        font-size: .8rem;
+        background-color: rgba(v.$mainBlue, .5);
+
+        @include mixins.atMedium{ 
+         padding: 12px 0;
+         font-size: 1rem;
+         background-color: transparent;
+
+      }        
+       
+    }
+}

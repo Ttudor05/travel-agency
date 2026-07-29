@@ -1,0 +1,40 @@
+
+@mixin atSmall {
+
+    @media (min-width: 530px){
+        @content;
+    }
+}
+
+@mixin atMedium {
+
+    @media (min-width: 800px){
+        @content;
+    }
+}
+
+@mixin atLarge {
+
+    @media (min-width: 1010px){
+        @content;
+    }
+}
+
+@mixin clearfix {
+
+     &::after {
+     content: "";
+     clear:both;
+     display:table;
+    }
+    
+}
+
+@mixin set-theme ($text-color: null, $bg-color: null, $border: null, $text-decoration: null, $font-weight: null, $display: null) {
+  color: $text-color;
+  background-color: $bg-color;
+  border: $border;
+  text-decoration: $text-decoration;
+  font-weight:$font-weight;
+  display: $display;
+}    
