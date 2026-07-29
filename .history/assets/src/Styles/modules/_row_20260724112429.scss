@@ -1,0 +1,117 @@
+@use '../base/variables' as v; // Step up out of 'modules' into 'base'
+@use '../base/mixins';  // Step up out of 'modules' into 'base'
+
+.row{
+
+  
+
+   &__b-margin-until-medium {
+
+       margin-bottom: 1rem; 
+
+   } 
+
+   @include mixins.atMedium{ 
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+
+        &__gutters {
+        column-gap: 5.3%;  
+        }
+
+    
+        &__gutters-large {
+
+            column-gap: 8%;
+
+        }
+
+        &row__gutters-small {
+
+            column-gap: 3.6%;
+        }
+        
+        &__b-margin-until-medium {
+
+            margin-bottom: 0;
+        }
+
+        &__medium-4 {
+            grid-column: span 4;
+        }
+        
+
+ 
+        &__medium-6 {
+            grid-column: span 6;
+
+        }        
+
+        &__medium-8 {
+            grid-column: span 8;
+
+        }
+
+
+    }
+
+     @include mixins.atLarge{ 
+        
+        &__b-margin-until-large {
+
+            margin-bottom: 0;
+        }
+
+        &__large-4 {
+            grid-column: span 4;
+        }
+        
+
+        &__large-6 {
+            grid-column: span 6;
+
+        }        
+
+        &__large-8 {
+            grid-column: span 8;
+
+        }
+
+    }
+
+
+    &__t-padding {
+
+        padding-top: 80px;
+    }
+
+/*-- Begin equal height rules--*/
+&__equal-height-at-medium{
+
+    @include mixins.atMedium{
+
+    display:flex;
+    }
+
+    & > div {
+
+        float:none;
+        display:flex;
+
+
+    }
+
+
+}
+
+    &__equal-height-at-large {
+
+            @include mixins.atLarge{
+        & > div {
+                display:flex;
+            }
+
+        }
+    }
+
+}
