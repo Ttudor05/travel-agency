@@ -1,0 +1,12 @@
+@use '../base/variables' as v; // Step up out of 'modules' into 'base'
+@use '../base/mixins';  // Step up out of 'modules' into 'base'
+.reveal-item{
+    opacity:0;
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    transform: scale(1.15);
+    &__is-visible {
+       opacity: 1; 
+       transform: scale(1);       
+    }
+
+}
