@@ -32,22 +32,20 @@
     &__logo {
 
       position: absolute;
+      @include mixins.set-theme($bg-color: v.$mainBlue);
+      padding: 13px 29px;
       top:0;
       left: 50%;
       transition: transform .3s ease-out;
-      transform: translateX(-50%) scale(.8);
-      transform-origin: 50% 0;
-      @include mixins.set-theme($bg-color: v.$mainBlue);        
-      padding: 25px 36px;
-
-
+      transform: translateX(-50%);
       @include mixins.atMedium {
 
         left:auto;
         transform:translateX(0);
+        padding: 25px 36px;
 
         .site-header__dark & {
-          transform: scale(.62);
+          transform: scale(.55);
         }
 
       }
